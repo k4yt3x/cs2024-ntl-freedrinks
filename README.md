@@ -8,4 +8,4 @@ At the CSides 2024 conference, attendees are in for a treat with the addition of
 
 ## Instructions
 
-The binary `freedrink` is heavily obfuscated and requires a username and password for access. Your goal is to uncover both the username and password to retrieve the flag, formatted as `flag{...}`. While traditional methods are an option, feel free to explore alternative approaches to extract the flag.
+The binary `freedrink` is heavily obfuscated and guarded by a username and password. Your objective is to either recover the username and password or bypass the security measures altogether to access the flag, which is formatted as `flag{...}`. You're welcome to use any means necessary to achieve the extraction of the flag.
