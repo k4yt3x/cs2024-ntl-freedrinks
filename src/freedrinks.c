@@ -62,10 +62,10 @@ int main() {
     char password[256];
     unsigned long username_hash, password_hash;
 
-    // djb2 hash of "Lom Tevasseur"
+    // djb2 hash of "Lom Tevasseur\n"
     unsigned long expected_username_hash = 967993393;
 
-    // djb2 hash of "Ihopewegetmoresponsorsnextyear"
+    // djb2 hash of "Ihopewegetmoresponsorsnextyear\n"
     unsigned long expected_password_hash = 2248063266;
 
     // Enter username:
