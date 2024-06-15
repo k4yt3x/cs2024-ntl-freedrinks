@@ -5,23 +5,23 @@ BINDIR=bin
 
 build:
 	mkdir -p $(BINDIR)
-	#movcc -Wf--no-mov-extern -static $(SRCDIR)/freedrink.c -s -o $(BINDIR)/freedrink
-	movcc $(SRCDIR)/freedrink.c -o $(BINDIR)/freedrink
-	mv $(BINDIR)/freedrink% $(BINDIR)/freedrink
-	strip -s $(BINDIR)/freedrink
+	#movcc -Wf--no-mov-extern -static $(SRCDIR)/freedrinks.c -s -o $(BINDIR)/freedrinks
+	movcc $(SRCDIR)/freedrinks.c -o $(BINDIR)/freedrinks
+	mv $(BINDIR)/freedrinks% $(BINDIR)/freedrinks
+	strip -s $(BINDIR)/freedrinks
 	objcopy \
 		--remove-section .eh_frame \
 		--remove-section .hash \
 		--remove-section .gnu.hash \
 		--remove-section .note.gnu.property \
 		--remove-section .shstrtab \
-		bin/freedrink bin/temp
-	mv bin/temp bin/freedrink
+		bin/freedrinks bin/temp
+	mv bin/temp bin/freedrinks
 
 debug:
 	mkdir -p $(BINDIR)
-	gcc -Wall -I$(SRCDIR) -g -DDEBUG $(SRCDIR)/freedrink.c -o $(BINDIR)/freedrink
+	gcc -Wall -I$(SRCDIR) -g -DDEBUG $(SRCDIR)/freedrinks.c -o $(BINDIR)/freedrinks
 
 clean:
-	rm -f $(SRCDIR)/*.o $(BINDIR)/freedrink
+	rm -f $(SRCDIR)/*.o $(BINDIR)/freedrinks
 
