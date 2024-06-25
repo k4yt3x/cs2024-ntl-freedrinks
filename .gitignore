@@ -1,5 +1,5 @@
 # Built-binaries
-bin/
+#bin/
 
 # Prerequisites
 *.d
