@@ -1,6 +1,8 @@
 # Free Drinks
 
-A reverse engineering challenge written for the CyberSCI 2024 Nationals competition.
+A reverse engineering challenge written for the CyberSci 2024 National Finals competition.
+
+This challenge was solved by **UW ICPC Team Black** from University of Waterloo and **TeamItaly**, the guest team from Italy.
 
 ## Challenge Background Story
 
